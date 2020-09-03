@@ -1,15 +1,15 @@
-<div id="GraficaFH" style="min-width: 310px; height: 400px; margin: 10 10 auto"></div>
+<div id="Grafica_F_B2C" style="min-width: 310px; height: 400px; margin: 10 10 auto"></div>
         <script type="text/javascript">
             window.addEventListener('DOMContentLoaded', (event) => {
                 $.ajax({
-                    url: "Conexion/DatosGrafica_FH.php",
+                    url: "Conexion/DatosGrafica_F_B2C.php",
                     method: "GET",
                     dataType: 'json',
                     contentType: "application/json; charset=utf-8",
                     data:'unit='+0 ,
                     success: function(dato) {                       
-
-                        Highcharts.chart('GraficaFH', {
+                        console.log(dato);
+                        Highcharts.chart('Grafica_F_B2C', {
                             chart:{
                                 type:'column',
                                 events: {
@@ -22,7 +22,7 @@
                                 }
                             },
                             title: {
-                                text: 'FIJO- HOGAR' // nombre principal
+                                text: 'FIJO - B2C' // nombre principal
                             },
                             subtitle: {
                                 text: 'Nivel de Calidad de datos Mes Actual'// subtitulo principal

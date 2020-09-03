@@ -15,9 +15,10 @@
     <script src="Highcharts-8.2.0/code/modules/exporting.js"></script>
     <script src="Highcharts-8.2.0/code/modules/export-data.js"></script>
     <script src="Highcharts-8.2.0/code/modules/accessibility.js"></script>
-
 </head>
+
 <body>
     <?php include 'inc/menu.php';?>
-    <?php include 'inc/GraficaFH.php';?>
+    <?php include 'inc/Grafica_F_B2C.php';?>
+    <?php include 'inc/Grafica_M_B2C.php';?>
 </body>
